@@ -29,11 +29,11 @@ Extract movie information from the paragraph
 ("human","{paragraph}")
 ]
 )
-para=str(input("give ur paragraph"))
+para=str(input("give ur paragraph : "))
 final_prompt=prompt.invoke( {"paragraph" : para,
      'format_instructions': parser.get_format_instructions()
      }
 )
 response=model.invoke(final_prompt)
 movie_data=parser.parse(response.content)
-print(movie_data)
+print(movie_data.model_dump_json(indent=4))
