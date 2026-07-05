@@ -3,6 +3,7 @@ langchain-core
 langchain-community
 langchain-groq
 langchain-google-genai
+langchain-mistralai
 
 google-generativeai
 
@@ -10,22 +11,14 @@ python-dotenv
 
 pydantic
 
-ipykernel
 
-jupyter
 
 tiktoken
 
-faiss-cpu
 
-chromadb
 
-pypdf
 
 beautifulsoup4
 
 requests
 
-fastapi
-
-uvicorn
